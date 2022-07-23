@@ -1,0 +1,13 @@
+.h1 {
+    text-align: center;
+    color: rgb(90, 90, 90);
+}
+
+.p {
+    text-align: left;
+    color:darkgreen;
+}
+
+.img {
+    size: 1000px;
+}
