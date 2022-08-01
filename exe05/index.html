@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exe05</title>
+        <style>
+            @keyframes myanimation{
+                0% {left: 0px}
+                100% {left: 500px}
+            }
+
+           div {
+            height: 100px;
+            width: 100px;
+            color:steelblue;
+            background-color: darkgray;
+            position: relative;
+            animation-name: myanimation;
+            animation-direction: reverse;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            }
+
+            div:hover {animation-play-state: paused;}
+
+            #e1 {animation-timing-function: ease;}
+            #e2 {animation-timing-function: ease-in;}
+            #e3 {animation-timing-function: ease-out;}
+            #e4 {animation-timing-function: ease-in-out;}
+            #e5 {animation-timing-function: linear;}
+        </style>
+    </head>
+    <body>
+        <div id="e1">ease</div>
+        <div id="e2">ease-in</div>
+        <div id="e3">ease-out</div>
+        <div id="e4">ease-in-out</div>
+        <div id="e5">linear</div>
+    </body>
+</html>
