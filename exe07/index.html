@@ -7,7 +7,13 @@
     </head>
     <body>
         <h1>Javascript</h1>
-        <p></p>
+        <p id="text">HTML + CSS</p>
+        <button type="button" onclick="ex01()">Click Me!</button>
+        <script>
+            function ex01() {
+                document.getElementById("text").innerHTML = "Javascript";
+            }
+        </script>
         <footer></footer>
     </body>
 </html>
