@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>exe08</title>
+        <style></style>
+    </head>
+    <body>
+        <h1>Javascript</h1>
+        <p>random number</p>
+        <p id="ex01"></p>
+        <p id="ex02"></p>
+        <script>
+            var ranNum;
+            ranNum = Math.random();
+            document.getElementById("ex01").innerHTML = "Random number is " + ranNum;
+
+            if (ranNum > 0.5){
+                document.getElementById("ex02").innerHTML = "BIG";
+            }
+
+            else{
+                document.getElementById("ex02").innerHTML = "SMALL";
+            }
+        </script>
+        <footer></footer>
+    </body>
+</html>
