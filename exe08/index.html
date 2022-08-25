@@ -31,13 +31,13 @@
         <script>
             function getHours(){
                 var getHours = Date().getHours();
-                document.getElementById("numHour").innerHTML = timeHour;
+                document.getElementById("numHour").innerHTML = getHours;
 
-                if (timeHour <= 7){
+                if (getHour <= 7){
                     document.getElementById("apmHour").innerHTML = "Good Morning :(";
                 }
 
-                else if (timeHour >= 14){
+                else if (getHour >= 14){
                     document.getElementById("apmHour").innerHTML = "Good Afternoon :|"
                 }
 
