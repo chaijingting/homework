@@ -30,7 +30,7 @@
         <p id="apmHour"></p>
         <script>
             function getHours(){
-                var getHours = Date().getHours();
+                var getHours = new Date().getHours();
                 document.getElementById("numHour").innerHTML = getHours;
 
                 if (getHour <= 7){
