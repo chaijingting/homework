@@ -25,13 +25,25 @@
         </script>
         <hr>
         <p>Date().getHours returns hours</p>
-        <button type="button" onclick="getHours()">Click Me!</button>
+        <button type="button" onclick="getHours()">Click Me !</button>
         <p id="numHour"></p>
-        <p id="ok"></p>
+        <p id="apmHour"></p>
         <script>
-            function getHours() {
-                var getHours
-                document.getElementById()
+            function getHours(){
+                var getHours = Date().getHours();
+                document.getElementById("numHour").innerHTML = timeHour;
+
+                if (timeHour <= 7){
+                    document.getElementById("apmHour").innerHTML = "Good Morning :(";
+                }
+
+                else if (timeHour >= 14){
+                    document.getElementById("apmHour").innerHTML = "Good Afternoon :|"
+                }
+
+                else{
+                    document.getElementById("apmHour").innerHTML = "Good Evening :)"
+                }
             }
         </script>
         <footer></footer>
