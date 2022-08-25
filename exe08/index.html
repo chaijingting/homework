@@ -33,11 +33,11 @@
                 var getHours = new Date().getHours();
                 document.getElementById("numHour").innerHTML = getHours;
 
-                if (getHour <= 7){
+                if (getHours <= 7){
                     document.getElementById("apmHour").innerHTML = "Good Morning :(";
                 }
 
-                else if (getHour >= 14){
+                else if (getHours >= 14){
                     document.getElementById("apmHour").innerHTML = "Good Afternoon :|";
                 }
 
