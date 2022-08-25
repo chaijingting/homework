@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>exe06</title>
         <style>
             * {
@@ -10,15 +10,63 @@
             }
 
             .row::after {
-                content: " ";
                 clear: left;
                 display: table;
             }
 
-            [class*="col-"] {
+            [class*-"col-"] {
                 float: left;
                 padding: 15px;
                 width: 100%;
+            }
+
+            @media only screen and (min-width: 481px) {
+                .col-s-25 {width:25%}
+                .col-s-75 {width:75%}
+                .col-s-100 {width:100%}
+            }
+
+            @media only screen and (min-width: 769px) {
+                .col-s-25 {width:50%}
+                .col-s-75 {width:50%}
+            }
+
+            html {
+                font-family: 'Courier New', Courier, monospace;
+            }
+
+            header {
+                background-color: #12727D;
+                color: #FCB886;
+                padding: 15px;
+            }
+
+            .menu ul {
+                margin: 0;
+            }
+
+            .menu li {
+                background-color: #FCB886;
+                color: #894329;
+                padding: 5px;
+                box-shadow: #ac7e5d 1px 2px 2px;
+            }
+
+            aside {
+                background-color: #12727D;
+                color: #FCB886;
+                padding: 15px;
+                text-align: center;
+                font-size: 15px;
+                box-shadow: #0e5a62 1px 2px 2px;
+            }
+
+            footer {
+                background-color: #FCB886;
+                color: #894329;
+                text-align: center;
+                font-size: 15px;
+                padding: 15px;
             }
         </style>
     </head>
@@ -54,5 +102,6 @@
             <footer>
                     <p>my address</p>
             </footer>
+        </div>
     </body>
 </html>
