@@ -68,35 +68,35 @@
             }
         </script>
         <hr>
-        <button type="button" onclick="getDay()">Click Me !</button>
+        <button type="button" onclick="numDay()">Click Me !</button>
         <script>
-            function getDay(){
-                var getDay = new Date().getDay();
-                document.getElementById("getDayValue").innerHTML = getDay;
-                switch (getDay){
+            function numDay(){
+                var numDay = window.prompt();
+                document.getElementById("getDayValue").innerHTML = numDay;
+                switch (numDay){
                     case 0:
-                        document.getElementById("getDayValue").innerHTML = "SUNDAY";
+                        document.getElementById("numDay").innerHTML = "SUNDAY";
                         break;
                     case 1:
-                        document.getElementById("getDayValue").innerHTML = "MONDAY";
+                        document.getElementById("numDay").innerHTML = "MONDAY";
                         break;
                     case 2:
-                        document.getElementById("getDayValue").innerHTML = "TUESDAY";
+                        document.getElementById("numDay").innerHTML = "TUESDAY";
                         break;
                     case 3:
-                        document.getElementById("getDayValue").innerHTML = "WEDNESDAY";
+                        document.getElementById("numDay").innerHTML = "WEDNESDAY";
                         break;
                     case 4:
-                        document.getElementById("getDayValue").innerHTML = "THURSDAY";
+                        document.getElementById("numDay").innerHTML = "THURSDAY";
                         break;
                     case 5:
-                        document.getElementById("getDayValue").innerHTML = "FRIDAY";
+                        document.getElementById("numDay").innerHTML = "FRIDAY";
                         break;
                     case 6:
-                        document.getElementById("getDayValue").innerHTML = "SATURDAY";
+                        document.getElementById("numDay").innerHTML = "SATURDAY";
                         break;
                     default:
-                        document.getElementById("getDayValue").innerHTML = "Please enter number 0-6 !!!";
+                        document.getElementById("numDay").innerHTML = "Please enter number 0-6 !!!";
                 }
             }
         </script>
