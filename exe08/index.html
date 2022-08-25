@@ -46,6 +46,26 @@
                 }
             }
         </script>
+        <hr>
+        <p>returns day value</p>
+        <button type="button" onclick="getDay()">Click Me !</button>
+        <p id="getDayValue"></p>
+        <script>
+            function getDay(){
+                var getDay = new Date().getDay();
+                document.getElementById("getDayValue").innerHTML = getDay;
+                switch (getDay){
+                    case 0:
+                        document.getElementById("getDayValue").innerHTML = "Today is Study Day......";
+
+                    case 4:
+                        document.getElementById("getDayValue").innerHTML = "LAST STUDY DAY!!";
+
+                    case 5:
+                        document.getElementById("getDayValue").innerHTML = "YEAH! It's WEEKEND!";
+                }
+            }
+        </script>
         <footer></footer>
     </body>
 </html>
