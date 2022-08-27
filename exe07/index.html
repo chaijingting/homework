@@ -2,29 +2,109 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>exe07</title>
     </head>
     <body>
         <h1>Javascript</h1>
-        <p id="text">HTML + CSS</p>
-        <button type="button" onclick="ex01()">Click Me !</button>
+        <p>random number</p>
+        <p id="ex01"></p>
+        <p id="ex02"></p>
         <script>
-            function ex01() {
-                document.getElementById("text").innerHTML = "Javascript";
+            var ranNum;
+            ranNum = Math.random();
+            document.getElementById("ex01").innerHTML = "Random number is " + ranNum;
+
+            if (ranNum > 0.5){
+                document.getElementById("ex02").innerHTML = "BIG";
+            }
+
+            else{
+                document.getElementById("ex02").innerHTML = "SMALL";
             }
         </script>
-        
-        <p>simple output 1</p>
-        <button type="button" onclick="document.write(<h1>Hello!!!</h1>)">Click Me !</button>
-        
-        <p>simple output 2</p>
-        <p id="ex03"></p>
+        <hr>
+        <p>returns hours</p>
+        <button type="button" onclick="getHours()">Click Me !</button>
+        <p id="numHour"></p>
+        <p id="apmHour"></p>
         <script>
-            var x = 10;
-            var y = x + 10;
-            document.getElementById("ex03").innerHTML = "x = 10; <br>y = x + 10; <br>y = " + y;
+            function getHours(){
+                var getHours = new Date().getHours();
+                document.getElementById("numHour").innerHTML = getHours;
+
+                if (getHours <= 7){
+                    document.getElementById("apmHour").innerHTML = "Good Morning : (";
+                }
+
+                else if (getHours >= 14){
+                    document.getElementById("apmHour").innerHTML = "Good Afternoon : |";
+                }
+
+                else{
+                    document.getElementById("apmHour").innerHTML = "Good Evening : )";
+                }
+            }
         </script>
-        
+        <hr>
+        <p>returns day value</p>
+        <button type="button" onclick="getDay()">Click Me !</button>
+        <p id="getDayValue"></p>
+        <script>
+            function getDay(){
+                var getDay = new Date().getDay();
+                document.getElementById("getDayValue").innerHTML = getDay;
+                switch (getDay){
+                    case 0:
+                        document.getElementById("getDayValue").innerHTML = "Today is Study Day......";
+                        break;
+                    case 4:
+                        document.getElementById("getDayValue").innerHTML = "LAST STUDY DAY!!";
+                        break;
+                    case 5:
+                        document.getElementById("getDayValue").innerHTML = "YEAH! It's Holiday!!!";
+                        break;
+                    case 6:
+                        document.getElementById("getDayValue").innerHTML = "YEAH! It's Holiday!!!";
+                        break;
+                    default:
+                        document.getElementById("getDayValue").innerHTML = "Study Today Too : (";
+                        break;
+                }
+            }
+        </script>
+        <hr>
+        <p>window prompt</p>
+        <button type="button" onclick="numDay()">Click Me !</button>
+        <script>
+            function numDay(){
+                var numDay = window.prompt("Please enter number 0-6.","");
+                switch (Number(numDay)){
+                    case 0:
+                        window.alert("SUNDAY");
+                        break;
+                    case 1:
+                        window.alert("MONDAY");
+                        break;
+                    case 2:
+                        window.alert("TUESDAY");
+                        break;
+                    case 3:
+                        window.alert("WEDNESDAY");
+                        break;
+                    case 4:
+                        window.alert("THURSDAY");
+                        break;
+                    case 5:
+                        window.alert("FRIDAY");
+                        break;
+                    case 6:
+                        window.alert("SATURDAY");
+                        break;
+                    default:
+                        window.alert("Please enter number 0-6 !!!");
+                }
+            }
+        </script>
+        <footer></footer>
     </body>
 </html>
