@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1>Javascript</h1>
+        <br>
         <p id="text">HTML + CSS</p>
         <button type="button" onclick="ex01()">Click Me !</button>
         <script>
@@ -14,13 +15,10 @@
                 document.getElementById("text").innerHTML = "Javascript";
             }
         </script>
-        <p id="ex02">simple output 1</p>
-        <button type="button" onclick="ex02()">Click Me !</button>
-        <script>
-            function ex02() {
-                document.write("<h1>Hello!!!</h1>")
-            }
-        </script>
+        <br>
+        <p>simple output 1</p>
+        <button type="button" onclick="document.write(<h1>Hello!!!</h1>)">Click Me !</button>
+        <br>
         <p>simple output 2</p>
         <p id="ex03"></p>
         <script>
@@ -28,5 +26,6 @@
             var y = x + 10;
             document.getElementById("ex03").innerHTML = "x = 10; <br>y = x + 10; <br>y = " + y;
         </script>
+        <br>
     </body>
 </html>
