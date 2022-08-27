@@ -2,18 +2,24 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>exe07</title>
-        <style></style>
     </head>
     <body>
         <h1>Javascript</h1>
         <p id="text">HTML + CSS</p>
-        <button type="button" onclick="ex01()">Click Me!</button>
+        <button type="button" onclick="ex01()">Click Me !</button>
         <script>
             function ex01() {
                 document.getElementById("text").innerHTML = "Javascript";
             }
         </script>
-        <footer></footer>
+        <p id="ex02">simple output 1</p>
+        <button type="button" onclick="ex02()">Click Me !</button>
+        <script>
+            function ex02() {
+                document.write("<h1>Hello!!!</h1>")
+            }
+        </script>
     </body>
 </html>
