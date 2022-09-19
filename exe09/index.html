@@ -6,6 +6,20 @@
     </head>
     <body>
         <script>
-            var Number = window.prompt()
+            var numInput = window.prompt("Please enter a numeber between 0 - 100");
+            do{
+                if (Number(numInput) > 80){
+                    window.alert("This number TOO BIG");
+                    nuumInput = window.prompt("Please enter a numeber between 0 - 100");
+                }
+
+                else (Number(numInput) < 80) {
+                    window.alert("This number TOO SMALL");
+                    nuumInput = window.prompt("Please enter a numeber between 0 - 100");
+
+                }
+            }
+
+            while (Number(numInput)) !== 80
         </script>
     </body>
