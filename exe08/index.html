@@ -6,6 +6,11 @@
     </head>
     <body>
         <h1>Javascript control structure</h1>
+        <script>
+            function text() {
+                var text = window.alert("TEXT")
+            }
+        </script>
         <p>Javascript for loop</p>
         <p id="ex01"></p>
         <script>
@@ -14,88 +19,6 @@
             
         </script>
         <hr>
-        <p>returns hours</p>
-        <button type="button" onclick="getHours()">Click Me !</button>
-        <p id="numHour"></p>
-        <p id="apmHour"></p>
-        <script>
-            function getHours(){
-                var getHours = new Date().getHours();
-                document.getElementById("numHour").innerHTML = getHours;
-
-                if (getHours <= 7){
-                    document.getElementById("apmHour").innerHTML = "Good Morning : (";
-                }
-
-                else if (getHours >= 14){
-                    document.getElementById("apmHour").innerHTML = "Good Afternoon : |";
-                }
-
-                else{
-                    document.getElementById("apmHour").innerHTML = "Good Evening : )";
-                }
-            }
-        </script>
-        <hr>
-        <p>returns day value</p>
-        <button type="button" onclick="getDay()">Click Me !</button>
-        <p id="getDayValue"></p>
-        <script>
-            function getDay(){
-                var getDay = new Date().getDay();
-                document.getElementById("getDayValue").innerHTML = getDay;
-                switch (getDay){
-                    case 0:
-                        document.getElementById("getDayValue").innerHTML = "Today is Study Day......";
-                        break;
-                    case 4:
-                        document.getElementById("getDayValue").innerHTML = "LAST STUDY DAY!!";
-                        break;
-                    case 5:
-                        document.getElementById("getDayValue").innerHTML = "YEAH! It's Holiday!!!";
-                        break;
-                    case 6:
-                        document.getElementById("getDayValue").innerHTML = "YEAH! It's Holiday!!!";
-                        break;
-                    default:
-                        document.getElementById("getDayValue").innerHTML = "Study Today Too : (";
-                        break;
-                }
-            }
-        </script>
-        <hr>
-        <p>window prompt</p>
-        <button type="button" onclick="numDay()">Click Me !</button>
-        <script>
-            function numDay(){
-                var numDay = window.prompt("Please enter number 0-6.","");
-                switch (Number(numDay)){
-                    case 0:
-                        window.alert("SUNDAY");
-                        break;
-                    case 1:
-                        window.alert("MONDAY");
-                        break;
-                    case 2:
-                        window.alert("TUESDAY");
-                        break;
-                    case 3:
-                        window.alert("WEDNESDAY");
-                        break;
-                    case 4:
-                        window.alert("THURSDAY");
-                        break;
-                    case 5:
-                        window.alert("FRIDAY");
-                        break;
-                    case 6:
-                        window.alert("SATURDAY");
-                        break;
-                    default:
-                        window.alert("Please enter number 0-6 !!!");
-                }
-            }
-        </script>
         <footer></footer>
     </body>
 </html>
