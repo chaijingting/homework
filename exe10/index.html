@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>exe10</title>
+        <script>
+            function returnValue(tempF){
+                return (5/9) * (tempF - 32);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Calculate the Celsius using Fahrenheit</h1>
+        <input type="number" id="inputValue">
+        <button onclick="convertToC()">Convert</button>
+        <p id="returnValue"></p>
+        <script>
+            function convertToC(){
+                var tempF = Number(document.getElementById("inputValue").Value);
+                document.getElementById("returnValue").innerHTML = "It is " + retuenValue(tempF) + Celsius;
+            }
+        </script>
+    </body>
