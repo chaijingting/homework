@@ -59,9 +59,9 @@
                 var numHour = new Date().getHours();
                 var strText04;
                 strText04 = (numHour > 12) ? "PM":"AM";
+                document.getElementById("ex04-NumHour").innerHTML = "Hours = " + numHour;
+                document.getElementById("ex04-msg").innerHTML = "Now is " + strText04;
             }
-            document.getElementById("ex04-NumHour").innerHTML = "Hours = " + numHour;
-            document.getElementById("ex04-msg").innerHTML = "Now is " + strText04;
         </script>
         <hr>
         <p>Javascript array sort()</p>
