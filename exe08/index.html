@@ -56,11 +56,12 @@
         <script>
             function ex04() {
                 var numHour = new Date().getHours();
-                var text = (numHour > 12) ? "PM":"AM";
+                var text;
+                text = (numHour > 12) ? "PM":"AM";
             }
             document.getElementById("ex04-NumHour").innerHTML = "Hour = " + numHour;
             document.getElementById("ex04-msg").innerHTML = "Now is " + text;
-            window.alert("text");
+            window.alert("test");
         </script>
         <hr>
         <p>Javascript array sort()</p>
