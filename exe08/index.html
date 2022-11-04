@@ -5,20 +5,93 @@
         <title>exe08</title>
     </head>
     <body>
-        <h1>Javascript control structure</h1>
-        <script>
-            function text() {
-                var text = window.alert("TEXT")
-            }
-        </script>
+        <h1>Javascript Control Structure</h1>
         <p>Javascript for loop</p>
         <p id="ex01"></p>
         <script>
             var strText = "";
             var i;
-            
+            var sum = 0;
+            for (i = 1; i <= 5; i++) {
+                sum += 1;
+                strText += "Loop = " + i + ", sum = " + sum + "<br>";
+            }
+            document.getElementById("ex01").innerHTML = strText;
         </script>
         <hr>
-        <footer></footer>
+        <p>Javascript for loop using while</p>
+        <p id="ex02"></p>
+        <script>
+            var strText02 = "";
+            var x = 1;
+            var sum02 = 0;
+            while (x <= 5) {
+                sum02 += x;
+                strText02 += "Loop = " + x + ", sum = " + sum02 + "<br>";
+                x++;
+            }
+            document.getElementById("ex02").innerHTML = strText02;
+        </script>
+        <hr>
+        <p>Javascript for loop using do...while</p>
+        <p id="ex03"></p>
+        <script>
+            var strText03 = "";
+            var y = 1;
+            var sum03 = 0;
+            do {
+                sum03 += y;
+                strText03 += "Loop = " + y + "' sum = " + sum03 + "<br>";
+                y++;
+            }
+            while (y <= 5);
+            document.getElementById("ex03").innerHTML = strText03;
+        </script>
+        <hr>
+        <p>return hours_Date().getHours show time info</p>
+        <p>Please click the button to get hours</p>
+        <button onclick="ex04()">OK</button>
+        <p id="ex04-NumHour"></p>
+        <p id="ex04-msg"></p>
+        <script>
+            function ex04() {
+                var numHour = new Date().getHours();
+                var text = (numHour > 12) ? "PM":"AM";
+            }
+            document.getElementById("ex04-NumHour").innerHTML = "Hour = " + numHour;
+            document.getElementById("ex04-msg").innerHTML = "Now is " + text;
+        </script>
+        <hr>
+        <p>Javascript array sort()</p>
+        <p id="ex05-msg01"></p>
+        <p id="ex05-msg02"></p>
+        <script>
+            var numList = [9, 7, 5, 3, 1, 0, 2, 4, 6, 8]
+            var numSort = numList.sort();
+            var numArray = "";
+            var arrayLen = numList.length;
+            var j;
+            for (j = 0; j < arrayLen; j++) {
+                numArray += "numSort[" + j + "] = " + numSort[j] + "<br>";
+            }
+            document.getElementById("ex05-msg01").innerHTML = "arrrayLen in numList = " + arrayLen;
+            document.getElementById("ex05-msg02").innerHTML = numArray;
+        </script>
+        <br>
+        <br>
+        <p id="ex06-msg01"></p>
+        <p id="ex06-msg02"></p>
+        <script>
+            var numList02 = [9, 7, 5, 3, 1]
+            var numSort02 = numList02.sort();
+            var numArray02 = "";
+            var arrayLen02 = numList02.length;
+            var z;
+            for (z in numList02) {
+                numArray02 += "numSort02[" + z + "] = " + numSort02[z] + "<br>";
+            }
+            document.getElementById("ex06-msg01").innerHTML = "arrrayLen in numList = " + arrayLen02;
+            document.getElementById("ex06-msg02").innerHTML = numArray02;
+        </script>
     </body>
 </html>
